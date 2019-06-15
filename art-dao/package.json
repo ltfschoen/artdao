@@ -1,0 +1,31 @@
+{
+  "name": "artdao",
+  "version": "1.0.0",
+  "description": "Art DAO",
+  "private": true,
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/truffle test",
+    "ganache": "npm explore @daostack/arc.js -- npm start ganache",
+    "migrate-daostack": "npm explore @daostack/arc.js -- npm run migrateContracts",
+    "truffle-migrate": "./node_modules/.bin/truffle migrate"
+  },
+  "keywords": [
+    "DAO",
+    "DAOStack",
+    "Ethereum",
+    "Blockchain"
+  ],
+  "author": "Luke Schoen",
+  "license": "GPL 2",
+  "dependencies": {
+    "@daostack/arc": "0.0.0-alpha.58",
+    "@daostack/arc.js": "0.0.0-alpha.95",
+    "ipfs-mini": "^1.1.2",
+    "truffle": "5.0.0-beta.1",
+    "truffle-hdwallet-provider": "0.0.6",
+    "web3-eth-abi": "^1.0.0-beta.37"
+  }
+}
