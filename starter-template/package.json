@@ -1,0 +1,36 @@
+{
+  "name": "YOUR_PROJECT_NAME",
+  "version": "1.0.0",
+  "description": "YOUR_PROJECT_DESCRIPTION",
+  "private": true,
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/truffle test",
+    "ganache": "npm explore @daostack/arc.js -- npm start ganache",
+    "migrate-daostack": "npm explore @daostack/arc.js -- npm start migrateContracts",
+    "webpack": "npx webpack --config webpack.config.js",
+    "truffle-migrate": "./node_modules/.bin/truffle migrate",
+    "launch-local": "npm run webpack && npm run migrate-daostack && rm -rf build && npm run truffle-migrate && node dist/app.js"
+  },
+  "keywords": [
+    "DAO",
+    "DAOStack",
+    "Ethereum",
+    "Blockchain"
+  ],
+  "author": "YOUR_NAME",
+  "license": "YOUR_LICENSE",
+  "dependencies": {
+    "@daostack/arc": "^0.0.0-alpha.56",
+    "@daostack/arc.js": "^0.0.0-alpha.89",
+    "express": "^4.16.3",
+    "truffle-hdwallet-provider": "0.0.6",
+    "truffle": "^5.0.0-beta.1"
+  },
+  "devDependencies": {
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.2"
+  }
+}
